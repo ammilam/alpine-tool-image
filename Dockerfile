@@ -6,7 +6,6 @@ RUN apk add --update \
   which \
   bash \ 
   jq \
-  mysql \
   mysql-client
 
 RUN curl -sSL https://sdk.cloud.google.com | bash
