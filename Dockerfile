@@ -5,7 +5,13 @@ RUN apk add --update \
   curl \
   which \
   bash \ 
-  jq
+  jq \
+  mysql \
+  mysql-client
 
 RUN curl -sSL https://sdk.cloud.google.com | bash
+
+RUN rm -rf /tmp/* && \
+    rm -rf /var/cache/apk/* 
+
 ENV PATH $PATH:/root/google-cloud-sdk/bin
