@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM woahbase/alpine-mysql
 
 RUN apk add --update \
   python3 \
